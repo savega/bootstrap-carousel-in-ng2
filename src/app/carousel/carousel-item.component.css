@@ -1,0 +1,26 @@
+.carousel-item {
+  position: relative;
+  display: none;
+}
+
+.carousel-item>a>img,
+.carousel-item>img {
+  line-height: 1
+}
+
+.carousel-item.active,
+.carousel-item.next,
+.carousel-item.prev {
+  display: block
+}
+
+.carousel-item.active {
+  left: 0
+}
+
+.carousel-item.next,
+.carousel-item.prev {
+  position: absolute;
+  top: 0;
+  width: 100%
+}

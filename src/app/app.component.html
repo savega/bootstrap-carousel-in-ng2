@@ -1,3 +1,7 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container">
+  <app-carousel>
+    <app-carousel-item *ngFor="let item of items; let i = index" [index]="i">
+      <img [src]="item.imgSrc" [alt]="item.imgAlt"/>
+    </app-carousel-item>
+  </app-carousel>
+</div>

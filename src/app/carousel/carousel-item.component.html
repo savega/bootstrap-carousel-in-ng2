@@ -1,0 +1,3 @@
+<div class="carousel-item" [ngClass]="getClass()" [@carousel]="getState()" (@carousel.done)="onStateChange($event)">
+  <ng-content></ng-content>
+</div>
